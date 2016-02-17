@@ -16,7 +16,7 @@ Trigger_on_off__c TriggerOnOff = Trigger_on_off__c.getInstance();
 
 BusinessHours bh = [SELECT Id FROM BusinessHours WHERE IsDefault=true];
 
-if (1==2)
+if (TriggerOnOff.Lead__c==true)
 {
     for (Lead l: Trigger.new)
     {
